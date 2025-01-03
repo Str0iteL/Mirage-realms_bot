@@ -1,108 +1,80 @@
 RU:
 **Название репозитория:**  
-Automated-Image-Clicker  
+**Automated-Image-Clicker**  
 
 **Описание:**  
-Этот проект представляет собой набор автоматизированных скриптов на Python, которые используют библиотеки `pyautogui`, `keyboard`, `ctypes`, а также `tkinter` и `pynput` для выполнения следующих задач:  
+Это скрипт на Python, который берёт на себя рутину: ищет картинки на экране, кликает по ним, нажимает клавиши и вообще делает всё, чтобы вам было лень напрягаться. Работает через библиотеки `pyautogui`, `keyboard`, `tkinter`, `pynput` и другие полезности.  
 
-- **Распознавание изображений на экране:** Поиск заданных PNG-файлов в указанной области экрана с использованием шаблонного сопоставления.  
-- **Автоматизация кликов:** Автоматический клик по найденным изображениям с выполнением дополнительных действий.  
-- **Имитирование нажатий клавиш:** Выполнение заданной последовательности нажатий клавиш с регулируемыми интервалами.  
-- **Работа с админскими правами:** Скрипт запрашивает права администратора для работы в защищённой среде.  
-- **Отслеживание координат мыши:** Отображение текущих координат курсора в небольшом окне, всегда находящемся поверх других.  
+### Что умеет:  
+- Находит нужные картинки (PNG) на экране.  
+- Кликает, куда нужно, или жмёт клавиши.  
+- Показывает текущие координаты мыши в маленьком окошке.  
+- Работает даже с правами администратора!  
 
-**Применение:**  
-Скрипты могут быть полезны для автоматизации задач в играх, приложениях или других программах, где требуется взаимодействие с графическим интерфейсом.  
+### Где пригодится:  
+Игры, программы или что угодно, где надо тыкать или жать кнопки.  
 
-**Основные функции:**  
-1. Гибкая настройка области поиска изображений на экране.  
-2. Автоматизация кликов и выполнение действий с задержкой.  
-3. Бесконечный цикл с возможностью добавления своей логики.  
-4. Простое GUI для отслеживания текущей позиции мыши.  
+### Как запустить:  
+1. Установите Python 3.7+ и библиотеки:  
+   - `pyautogui`  
+   - `keyboard`  
+   - `tkinter`  
+   - `pynput`.  
+2. Настройте путь к папке с изображениями и координаты кликов.  
+3. Запустите скрипт (не забудьте права администратора!).  
 
-**Требования:**  
-- Python 3.7+  
-- Установленные библиотеки:  
-  - `pyautogui`  
-  - `keyboard`  
-  - `tkinter` (входит в стандартную библиотеку)  
-  - `pynput`  
+### Проблемы?  
+Да, есть косяки:  
+- Иногда скрипт не закрывает мешки с ресурсами.  
+- Пропускает клики на зелёную кнопку или мобов.  
+Вот и пришлось мне сидеть до 3 ночи, чтобы понять, почему персонаж умирает. Исправить всё можно, так что надеюсь, кто-нибудь сделает мой код лучше.  
 
-**Как запустить:**  
-1. Убедитесь, что у вас установлен Python и необходимые зависимости.  
-2. Для скрипта кликов по изображениям:  
-   - Укажите путь к папке с изображениями в переменной `folder_path`.  
-   - Настройте область поиска и координаты кликов в переменных `region` и `click_coords`.  
-   - Запустите скрипт с правами администратора.  
-3. Для скрипта отслеживания координат:  
-   - Просто запустите его для отображения текущей позиции мыши в реальном времени.  
+**Файлы:**  
+- Русские и английские версии скриптов: для кликов и для отслеживания мыши.  
 
-**Включённые файлы:**  
-В репозитории предоставлены русские и английские версии скриптов в ZIP-архиве:  
-- **1_RU_main.py**: Русская версия скрипта для автоматизации кликов по изображениям.  
-- **2_English_main.py**: Английская версия скрипта для автоматизации кликов по изображениям.  
-- **3_RU_For_coordinates.py**: Русская версия скрипта для отслеживания координат мыши.  
-- **4_English_For_coordinates.py**: Английская версия скрипта для отслеживания координат мыши.  
-
-**Предупреждение:**  
-Скрипты предназначены для учебных и автоматизационных целей. Используйте их ответственно и не нарушайте правила использования приложений или игр.  
+**Важно:**  
+Скрипт для автоматизации, не для нарушений правил игр или программ!  
 
 **Лицензия:**  
 MIT License  
 
 
-English:
+English: 
 **Repository Name:**  
-Automated-Image-Clicker  
+**Automated-Image-Clicker**  
 
 **Description:**  
-This project is an automated Python script leveraging the `pyautogui`, `keyboard`, and `ctypes` libraries to perform the following tasks:  
+This Python script takes care of the boring stuff: finds images on your screen, clicks them, presses keys, and generally makes life easier. It works using libraries like `pyautogui`, `keyboard`, `tkinter`, `pynput`, and other handy tools.  
 
-- **Image Recognition on Screen:** Search for specified PNG files within a designated screen region using template matching.  
-- **Automated Clicks:** Automatically click on detected images with additional actions as required.  
-- **Simulated Key Presses:** Execute a predefined sequence of key presses at configurable intervals.  
-- **Administrator Privileges:** The script requests admin rights to operate in secure environments.  
+### Features:  
+- Detects specified images (PNG) on the screen.  
+- Clicks where needed or presses keys.  
+- Displays the current mouse coordinates in a small always-on-top window.  
+- Runs even with administrator privileges!  
 
-**Additional Script:**  
-This repository also includes another script for real-time tracking of mouse coordinates using `tkinter` and `pynput`.  
-- Displays the current mouse cursor position in a small, always-on-top window.  
-- Useful for determining screen regions or click coordinates for automation tasks.  
+### Use Cases:  
+Games, applications, or anything else where you need to click or press buttons repeatedly.  
 
-**Application:**  
-The scripts are ideal for automating tasks in games, applications, or other programs that require interaction with graphical user interfaces.  
+### How to Run:  
+1. Install Python 3.7+ and the required libraries:  
+   - `pyautogui`  
+   - `keyboard`  
+   - `tkinter`  
+   - `pynput`.  
+2. Configure the path to the image folder and the click coordinates.  
+3. Run the script (don’t forget to grant administrator privileges!).  
 
-**Key Features:**  
-1. Flexible configuration for searching images within a defined screen region.  
-2. Automated mouse clicks and additional actions with delays.  
-3. Simulated keypress functionality in an infinite loop.  
-4. Simple GUI for real-time mouse position tracking.  
+### Issues?  
+Yes, there are a few hiccups:  
+- Sometimes the script misses resource bags.  
+- Skips clicks on green buttons or mobs.  
+I had to stay up until 3 AM debugging why my character kept dying. Fixes are possible, so I hope someone improves the code!  
 
-**Requirements:**  
-- Python 3.7+  
-- Installed libraries:  
-  - `pyautogui`  
-  - `keyboard`  
-  - `tkinter` (standard library)  
-  - `pynput`  
+**Files:**  
+- Russian and English versions of the scripts for both image clicking and mouse tracking.  
 
-**How to Run:**  
-1. Ensure Python and the required dependencies are installed.  
-2. For the image clicker script:  
-   - Set the path to the folder containing images in the `folder_path` variable.  
-   - Configure the search region and click coordinates in the `region` and `click_coords` variables.  
-   - Run the script with administrator privileges.  
-3. For the mouse coordinates tracker:  
-   - Run the script directly to display the current cursor position.  
-
-**Included Files:**  
-This repository provides both Russian and English versions of the scripts in a ZIP file:  
-- **1_RU_main.py**: Russian version of the automated image clicker script.  
-- **2_English_main.py**: English version of the automated image clicker script.  
-- **3_RU_For_coordinates.py**: Russian version of the mouse coordinates tracker.  
-- **4_English_For_coordinates.py**: English version of the mouse coordinates tracker.  
-
-**Warning:**  
-These scripts are intended for educational and automation purposes. Use them responsibly and do not violate application or game usage policies.  
+**Important:**  
+This script is intended for automation purposes, not for breaking the rules of games or applications!  
 
 **License:**  
 MIT License  
